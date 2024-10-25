@@ -16,7 +16,7 @@ class Atleta(ABC):
     def __str__(self):
         info = f'Nome: {self.nome}, '
         info += f'{self.idade} anos, '
-        info += f'{self.peso:2f} Kg'
+        info += f'{self.peso:.2f} Kg'
         return info
 
 class Corredor(Atleta):
